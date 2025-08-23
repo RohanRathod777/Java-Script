@@ -41,5 +41,5 @@ if (balance < 500) {
 } else if (balance < 900) {
     console.log("less than 900");
 } else {
-    console.log("Greater than");
+    console.log("Greater than 1000");
 }
