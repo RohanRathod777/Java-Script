@@ -7,23 +7,49 @@
 //         break;
 // }
 
-const month = 3
+// const month = 3
+
+// switch (month) {
+//     case 1:
+//         console.log("Jan");
+
+//         break;
+//     case 2:
+//         console.log("Feb");
+
+//         break;
+//     case 3:
+//         console.log("Mar");
+
+//         break;
+//     case 4:
+//         console.log("Apr");
+
+//         break;
+
+//     default:
+//         break;
+// }
+
+//STRING
+
+const month = "March"
 
 switch (month) {
-    case 1:
+    case "Jan":
         console.log("Jan");
 
         break;
-    case 2:
+    case "Feb":
         console.log("Feb");
 
         break;
-    case 3:
-        console.log("Mar");
+    case "March":
+        console.log("March");
 
         break;
-    case 4:
-        console.log("Apr");
+    case "April":
+        console.log("April");
 
         break;
 
