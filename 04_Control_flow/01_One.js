@@ -44,7 +44,6 @@ if (Score > 100) {
 //     console.log("Greater than 1000");
 // }
 
-
 const userLoggedIn = true
 const debitCard = true
 const userLoggedInFromGoogle = false

@@ -42,7 +42,6 @@ Val1 = null ?? 10 ?? 15
 
 console.log(Val1);
 
-
 // Terniary Operator
 
 // condition ? true : false
