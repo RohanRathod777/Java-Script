@@ -15,15 +15,42 @@
 </body>
 
 <script>
-    function addLanguage (langName){
-        const li=document.createElement('li')
-        li.innerHTML=`${langName}`
+    function addLanguage(langName) {
+
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
 
         document.querySelector('.language').appendChild(li)
 
     }
     addLanguage("Python")
     addLanguage("TypeScript")
+
+    // OPTIMIZED WAY 
+    function addOptiLanguage(langName) {
+
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptiLanguage("golang")
+
+    //EDIT
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML="Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondlang.replaceWith(newli)
+
+    // EDIT
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = "<li>TypeScript</li>"
+
+    //LAST LANG
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
 </script>
 
 </html>
