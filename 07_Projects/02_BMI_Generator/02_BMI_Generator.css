@@ -3,7 +3,7 @@
   height: 825px;
   background-color: #797978;
   padding-left: 100px;
-  margin-left: 350px;
+  /* margin-left: 350px; */
 
 }
 
@@ -44,7 +44,8 @@
   font-size: 35px;
   margin-left: 150px;
   margin-top: 20px;
-  color: rgb(241, 241, 241);
+  color: black;
+  text-shadow: white;
 }
 
 button {
