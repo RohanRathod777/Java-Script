@@ -23,12 +23,13 @@
 				"wayou.vscode-todo-highlight",
 				"formulahendry.code-runner",
 				"ecmel.vscode-html-css",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"ms-vscode.live-server"
 
 			],
 			"settings": {
 				"editor.fontSize": 17,
-				"terminal.integrated.fontSize": 17,
+				"terminal.integrated.fontSize": 16,
 				"editor.wordWrap": "on"
 			}
 			
