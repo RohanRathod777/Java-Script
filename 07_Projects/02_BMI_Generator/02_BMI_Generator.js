@@ -19,5 +19,4 @@ form.addEventListener('submit', function (e) {
         results.innerHTML = `<span>${bmi} </span> ${bmi > 24.9, ' : Overweight'}`;
     }
 
-
 })
