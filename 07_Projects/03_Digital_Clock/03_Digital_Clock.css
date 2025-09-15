@@ -11,10 +11,124 @@ body {
     flex-direction: column;
 }
 
-#clock {
-    font-size: 40px;
-    background-color: orange;
-    padding: 20px 50px;
-    margin-top: 10px;
-    border-radius: 10px;
+/* ...existing code... */
+body {
+    background-color: #212121;
+    color: #ffff;
 }
+
+.centre {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* BANNER YOUR LOCAL TIME */
+#banner {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 32px;
+    border: 2px solid #ffd600;
+    border-radius: 8px;
+    background: linear-gradient(270deg, #5d0d72, rgb(144, 44, 122), rgb(100, 33, 86), #2c031f);
+    background-size: 400% 400%;
+    animation: bannerGradientMove 4s linear infinite;
+    box-shadow: 0 0 10px 5px #a4205766;
+
+
+}
+
+@keyframes bannerGradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* CLOCK */
+
+#clock {
+    color: #212121;
+    font-size: 40px;
+    padding: 20px 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #ffd600;
+    background: linear-gradient(270deg, orange, yellow, #ff9800, #ffd600, orange);
+    background-size: 400% 400%;
+    animation: clockGradientMove 4s linear infinite;
+    box-shadow: 0 0 10px 10px white, 0 0 10px 10px yellow;
+    transition: box-shadow 0.3s, background 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* Add perspective for text animation */
+    perspective: 300px;
+}
+
+/* Cool animated gradient text effect */
+#clock span {
+    display: inline-block;
+    background: linear-gradient(90deg, #fff, #ffd600, orange, #fff);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradientMove 2s linear infinite, textWave 1.5s infinite ease-in-out;
+}
+
+/* Keyframes for background gradient animation */
+@keyframes clockGradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Keyframes for animated gradient text */
+@keyframes textGradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Keyframes for a wave effect on the text */
+@keyframes textWave {
+
+    0%,
+    100% {
+        transform: translateY(0) rotateX(0deg);
+    }
+
+    20% {
+        transform: translateY(-6px) rotateX(10deg);
+    }
+
+    40% {
+        transform: translateY(0) rotateX(0deg);
+    }
+
+    60% {
+        transform: translateY(6px) rotateX(-10deg);
+    }
+
+    80% {
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+/* ...existing code... */
