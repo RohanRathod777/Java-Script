@@ -40,7 +40,6 @@ body {
     animation: bannerGradientMove 4s linear infinite;
     box-shadow: 0 0 10px 5px #a4205766;
 
-
 }
 
 @keyframes bannerGradientMove {
