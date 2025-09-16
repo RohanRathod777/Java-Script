@@ -14,4 +14,3 @@ let prevGuess=[];
 let numGuess=1;
 
 let playGame=true;
-
